@@ -7,9 +7,11 @@ require('dotenv').config();
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-// API to send response ...
+// API to send response ... 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('hwllo ')
+    res.render('index');
+
 });
 
 // import person file
